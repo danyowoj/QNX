@@ -11,7 +11,7 @@ EXECUTABLE=$(basename "$SOURCE_FILE" .c)
 
 # Компиляция программы
 echo "Компиляция $SOURCE_FILE..."
-cc -o "$EXECUTABLE" "$SOURCE_FILE" 2> compile_errors.txt
+qcc -o "$EXECUTABLE" "$SOURCE_FILE" 2> compile_errors.txt
 
 # Проверка на ошибки компиляции
 if [ $? -eq 0 ]; then
