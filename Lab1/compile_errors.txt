@@ -1,2 +1,0 @@
-cc1: error: program.c: No such file or directory
-cc: /usr/qnx650/host/qnx6/x86/usr/lib/gcc/i486-pc-nto-qnx6.5.0/4.4.2/cc1 error 1
