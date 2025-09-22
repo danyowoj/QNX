@@ -6,38 +6,30 @@
 # Lab1
 
 ## 1. Работа с командной строкой 
-Для запуска:
+Доступные команды:
+- make all              - Создать bin directory, скрипты и программы
+- make scripts          - Сделать скрипты исполняемыми и скопировать в bin/
+- make programs         - Скомпилировать все программы в bin/
+- make clean            - Очистить bin directory и временные файлы
 
-```
-chmod +x protocol.sh
-./protocol.sh
-```
+Отдельные цели:
+- make protocol         - Запуск протокола из текущей директории
+- make show_params      - Запуск скрипта параметров из bin/
+- make process_info     - Запуск скрипта информации о процессе из bin/
+- make compile_run      - Запуск скрипта компиляции из bin/
 
-## 2. Создание простых скриптов
-Сделать скрипты исполняемыми
-```
-chmod +x show_params.sh process_info.sh compile_and_run.sh
-```
-Скрипт вывода параметров `./show_params.sh param1 param2 param3`
+Запуск программ из bin/:
+- make run_hello        - Запуск hello_center
+- make run_keycodes     - Запуск key_codes
+- make run_moving       - Запуск moving_char
+- make run_advanced     - Запуск advanced_moving_char с параметрами
+- make run_advanced_alt - Альтернативный запуск
 
-Скрипт информации о процессе `./process_info.sh procnto # или другое имя процесса`
+Структура после выполнения:
+- bin/hello_center
+- bin/key_codes
+- bin/moving_char
+- bin/advanced_moving_char
+- bin/*.sh
 
-Скрипт компиляции и запуска `./compile_and_run.sh my_program.c`
-
-## 3. Разработка программ
-
-Компиляция программ:
-```
-qcc -o hello_center hello_center.c
-qcc -o key_codes key_codes.c
-qcc -o moving_char moving_char.c
-qcc -o advanced_moving_char advanced_moving_char.c
-```
-
-Вывода HELLO в центре экрана `./hello_center`
-
-Определение кодов клавиш `./key_codes`
-
-Движущийся символ `./moving_char`
-
-Движущийся символ с параметрами (пример) `./advanced_moving_char -x 10 -y 5 -dx 1 -dy 1 -d 50000 -s @ -c 31`
+# Lab 2
