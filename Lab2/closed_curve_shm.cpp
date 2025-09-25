@@ -96,7 +96,7 @@ int main()
         {
             if (read(0, &c, 1) == 1)
             {
-                if (c == 'q' || c == '\xlb')
+                if (c == 'q' || c == '\x1b')
                 {
                     shm->run = 0;
                     break;
