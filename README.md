@@ -1,10 +1,3 @@
-# TODO
-- [x] разобраться с `compile_and_run`
-- [x] добавить инструкцию для блока `3. Разработка программ`
-- [x] переделать `Makefile`
-
----
-
 # LAB1
 
 ## 1. Работа с командной строкой (составить протокол по выполнению всех пунктов)
@@ -54,6 +47,7 @@
 - make scripts          - Сделать скрипты исполняемыми и скопировать в bin/
 - make programs         - Скомпилировать все программы в bin/
 - make clean            - Очистить bin directory и временные файлы
+- make help             - Отобразить подсказку по доступным командам
 
 Отдельные цели:
 - make protocol         - Запуск протокола из текущей директории
@@ -68,13 +62,6 @@
 - make run_advanced     - Запуск advanced_moving_char с параметрами
 - make run_advanced_alt - Альтернативный запуск
 
-Структура после выполнения:
-- bin/hello_center
-- bin/key_codes
-- bin/moving_char
-- bin/advanced_moving_char
-- bin/*.sh
-
 # LAB 2 Процессы и асинхронное взаимодействие
 
 1. Тщательно изучить библиотеку VinGraph.
@@ -84,7 +71,20 @@
 5. Затем последнюю программу сделать с помощью нитей в одном процессе.
 
 ## Компиляция и запуск
-```
-qcc -o abstract abstract.cpp -l vg 
-./abstract
-```
+Доступные команды:
+- make all          - сборка всех программ
+- make run_all      - запуск всех программ
+- make clean        - очистка bin directory и временные файлы
+- make help         - подсказка по доступным командам
+
+Отдельные цели:
+- make draw_all
+- make move_processes
+- make closed_curve_shm
+- make closed_curve_threads
+
+Запуск программ из bin/:
+- make run_draw_all
+- make run_move_processes
+- make run_closed_curve_shm
+- make run_closed_curve_threads
