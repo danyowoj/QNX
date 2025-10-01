@@ -71,20 +71,15 @@
 5. Затем последнюю программу сделать с помощью нитей в одном процессе.
 
 ## Компиляция и запуск
-Доступные команды:
-- make all          - сборка всех программ
-- make run_all      - запуск всех программ
-- make clean        - очистка bin directory и временные файлы
-- make help         - подсказка по доступным командам
-
-Отдельные цели:
-- make draw_all
-- make move_processes
-- make closed_curve_shm
-- make closed_curve_threads
-
-Запуск программ из bin/:
+Makefile для примеров VinGraph
+- make all                 - собрать все программы
+- make draw_all            - собрать draw_all
+- make move_processes      - собрать move_processes
+- make closed_curve_shm    - собрать closed_curve_shm
+- make closed_curve_threads- собрать closed_curve_threads
 - make run_draw_all
 - make run_move_processes
 - make run_closed_curve_shm
 - make run_closed_curve_threads
+- make run_all"
+- make clean               - удалить все собранные файлы и каталог bin
